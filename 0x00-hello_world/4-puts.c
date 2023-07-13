@@ -2,7 +2,7 @@
 /**
  * main - entry point
  * description - writing a sript
- * return: Always Success (0)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

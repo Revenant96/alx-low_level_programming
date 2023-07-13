@@ -3,7 +3,7 @@
  * main - Entry point
  * Description: printe a quoate using write function
  * write(int fd.const void*buf.size_t count)
- * return: Always success (1)
+ * Return: Always 1 (Success)
  */
 int main(void)
 {

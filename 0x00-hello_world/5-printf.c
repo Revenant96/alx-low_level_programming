@@ -2,7 +2,7 @@
 /**
  * main - entry point
  * descriptio - writing a script
- * return: Always Success (0)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

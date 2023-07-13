@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  * description - using sizeof to pring size of various variables
- * return: Always 0  Success
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

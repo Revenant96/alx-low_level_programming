@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main -entry point
+ * main - entry point
  * descriptio - writing a script
- * return - (0)
+ * return: Always Success (0)
  */
 int main(void)
 {

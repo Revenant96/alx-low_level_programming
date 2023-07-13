@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * mai - Entry point
+ * main - Entry point
  * description - using sizeof to pring size of various variables
- * return - Success
+ * return: Always 0  Success
  */
 int main(void)
 {

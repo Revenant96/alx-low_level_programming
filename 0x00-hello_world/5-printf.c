@@ -2,7 +2,7 @@
 /**
  * main -entry point
  * descriptio - writing a script
- * return (0)
+ * return - (0)
  */
 int main(void)
 {

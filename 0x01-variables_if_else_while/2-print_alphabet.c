@@ -10,8 +10,10 @@ int main(void)
 	char ch = 'a';
 
 	for (; ch <= 'z' ;)
+	{
 		putchar(ch);
-	ch++;
+		ch++;
+	}
 		putchar('\n');
 		return (0);
 }

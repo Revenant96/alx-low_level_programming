@@ -10,7 +10,7 @@ int main(void)
 {
 	char ch = 'a';
 
-	for (; ch < 'z' ;)
+	for (; ch <= 'z' ;)
 		if (ch == 'e' || ch == 'q')
 		{
 			ch++;
@@ -23,3 +23,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+

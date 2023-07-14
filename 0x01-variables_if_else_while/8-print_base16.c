@@ -16,7 +16,7 @@ int main(void)
 		a++;
 	}
 
-	int i = 'a';
+	int a = 'a';
 
 	for (; i <= 'f' ;)
 	{

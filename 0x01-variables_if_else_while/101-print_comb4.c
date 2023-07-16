@@ -8,30 +8,29 @@
 
 int main(void)
 {
-	int a,b,c;
+	int a, b, c;
 
-	a= '0';
+	a = '0';
 
-		while ( a <= '9' )
+		while (a <= '9')
 		{
 			b = '0';
 
-			while ( b <= '9')
+			while (b <= '9')
 			{
 				c = '0';
 
 				while (c <= '9')
 				{
-					if ( a != b && a < b
+					if (a != b && a < b
 							&& b != c && b < c)
 					{
 						putchar(a);
 						putchar(b);
 						putchar(c);
-						if ( a + b + c != 24)
+						if (a != '7' && b != '8' && c != '9')
 						{
 							putchar(',');
-							
 							putchar(' ');
 						}
 					}

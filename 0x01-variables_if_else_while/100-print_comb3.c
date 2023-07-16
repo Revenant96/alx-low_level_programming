@@ -18,11 +18,11 @@ int main(void)
 
 		for (; b <= '9' ;)
 		{
-			if ( b != a && a < b )
+			if (b != a && a < b)
 			{
 				putchar(a);
 				putchar(b);
-				if ( a + b != 17)
+				if (a != '8' &&  b != 9)
 				{
 					putchar(',');
 					putchar(' ');

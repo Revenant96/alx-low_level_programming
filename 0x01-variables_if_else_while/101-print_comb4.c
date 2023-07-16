@@ -10,29 +10,29 @@ int main(void)
 {
 	int a, b, c;
 
-	a = '0';
+	a = 0;
 
-		while (a <= '9')
+		while (a <= 9)
 		{
-			b = '0';
+			b = 0;
 
-			while (b <= '9')
+			while (b <= 9)
 			{
-				c = '0';
+				c = 0;
 
-				while (c <= '9')
+				while (c <= 9)
 				{
 					if (a != b && a < b
 							&& b != c && b < c)
 					{
-						putchar(a);
-						putchar(b);
-						putchar(c);
-						if (a != '7' && b != '8' && c != '9')
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(a + 48);
+						putchar(b + 48);
+						putchar(c + 48);
+					if (a != 7 && b != 8 && c != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 					c++;
 				}

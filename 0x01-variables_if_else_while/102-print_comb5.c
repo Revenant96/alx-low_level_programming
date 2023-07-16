@@ -16,7 +16,7 @@ int main(void)
 	{
 		 b = a;
 
-		 while ( b <= 99 );
+		 while ( b <= 99 )
 		 {
 			 if ( b != a)
 			 {

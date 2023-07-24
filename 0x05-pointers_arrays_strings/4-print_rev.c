@@ -11,11 +11,9 @@ void print_rev(char *s)
 	int str;
 
 	while (s[str])
-	{
 		str++;
-	}
 
-	while (str <= 0; str--)
+	while (str--)
 	{
 		_putchar(s[str]);
 	}

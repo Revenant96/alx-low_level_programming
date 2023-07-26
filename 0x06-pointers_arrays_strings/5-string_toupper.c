@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _string_toupper - function to reverse lowercase
+ * string_toupper - function to reverse lowercase
  * to upper case
  * @str: string to be reversed
  * Return: Reversed string

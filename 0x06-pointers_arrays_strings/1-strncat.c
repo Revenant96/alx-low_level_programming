@@ -2,7 +2,7 @@
 
 /**
  * _strncat - function to concate 2 strings with max of n bytes
- * @src; first string
+ * @src: first string
  * @dest: second string
  * @n: the number of bytes
  * Return: Result of concating

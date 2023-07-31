@@ -9,13 +9,11 @@ void print_chessboard(char (*a)[8])
 {
 	unsigned int count, gcount;
 
-	for (count = 0; count <= 8; count++)
+	for (count = 0; count < 8; count++)
 	{
-		gcount = 0;
-		while (gcount <= 8)
+		for (gcount = 0; gcount < 8; gcount++)
 		{
 			_putchar(a[count][gcount]);
-			gcount++;
 		}
 	}
 	_putchar('\n');

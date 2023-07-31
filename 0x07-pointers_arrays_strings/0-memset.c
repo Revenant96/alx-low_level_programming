@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * _memset - fuction that mimics memset
- * @s: pointer to the string to be replaced
- * @b: string to use to replace
+ * _memset - function to mimic memset
+ * @s: pointer to array
+ * @b: character to add
  * @n: size
- * Return: memset
+ * Return: updated string
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0;
+	unsigned int i;
 
-	for (; n > 0; i++)
+	for (i = 0; n > 0; i++)
 	{
 		s[i] = b;
 		n--;

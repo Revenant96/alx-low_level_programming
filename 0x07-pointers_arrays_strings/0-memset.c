@@ -3,7 +3,7 @@
 /**
  * _memset - function to mimic memset
  * @s: pointer to destination string
- * @bL string to use for replacing
+ * @b: string to use for replacing
  * @n: Size
  * Return: updated s
  */

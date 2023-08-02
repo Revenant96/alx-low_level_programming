@@ -3,9 +3,10 @@
 /**
  * _sqrt_recursion - function to return squre root
  * @n: number
+ * @i: square root
  * Return: Result
  */
-
+int _sqrt_rec_helper(int n, int i);
 int _sqrt_recursion(int n)
 {
 	if (n < 0)

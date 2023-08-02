@@ -1,11 +1,18 @@
 #include "main.h"
 
 /**
- * s_prime_numbe - function to find a prime number
+ * is_prime_number - function to find a prime number
  * @n: number to test
  * Return: 0 if failure 1 on success
  */
 
+/**
+ * @i: int
+ * Return: result
+ */
+
+
+int prime_helper(int n, int i);
 int is_prime_number(int n)
 {
 	if (n <= 1)

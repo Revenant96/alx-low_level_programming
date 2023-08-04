@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - multiplies 2 numbers
@@ -9,12 +10,15 @@
 
 int main(int argc, char const *argv[])
 {
-	int sum;
+	int ar1, ar2, mul;
 
 	if (argc == 3)
 	{
-		sum = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", sum);
+		ar1 = atoi(argv[1]);
+		ar2 = atoi(argv[2]);
+
+		mul = ar1 * ar2;
+		printf("%d\n", mul);
 	}
 	else
 	{

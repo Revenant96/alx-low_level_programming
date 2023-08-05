@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _isalpha = checks of the lower or upper case
+ * _isalpha - checks of the lower or upper case
  * @c: character input
  * Return: 1 if lower or upper case
  * otherwhise Always 0 (Success)
  */
 
-int _ispalha(int c)
+int _isalpha(int c)
 {
 	if (c >= 97 && c <= 122)
 	{

@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * strlen - fucntion to find length of string
+ * _strlen - fucntion to find length of string
  * @s: string
  * Return: Length
  */
 
-int strlen(char *s)
+int _strlen(char *s)
 {
 	int size = 0;
 
@@ -28,8 +28,8 @@ char *str_concat(char *s1, char *s2)
 	int size1, size2, i;
 	char *c;
 
-	size1 = strlen(s1);
-	size2 = strlent(s2);
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
 
 	c = malloc((size1 + size2) * sizeof(char) + 1);
 

@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * strlen - function to find length
+ * _strlen - function to find length
  * @s: pointer to arg
  * Return: Int
  */
 
-int strlen(char *s)
+int _strlen(char *s)
 {
 	int size = 0;
 
@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 
 	for (; i < ac; i++, anc++)
 	{
-		anc += strlen(av[i]);
+		anc += _strlen(av[i]);
 	}
 	s = malloc(sizeof(char) * anc + 1);
 

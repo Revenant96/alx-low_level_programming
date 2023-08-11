@@ -52,7 +52,7 @@ int _atoi(const char *s)
 
 void print_int(unsigned long int n)
 {
-	unsigned long int dib = 1, i, resp;
+	unsigned long int div = 1, i, resp;
 
 	for (i = 0; n / div > 9; i++, div *= 10)
 		;

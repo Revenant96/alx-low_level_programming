@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _memset - fills mem with cons byte
+ * memset - fills mem with cons byte
  * @s: pointer to plac cons
  * @b: cons
  * @n: max bytes
  * Return: S
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *memset(char *s, char b, unsigned int n)
 {
 	char *ptr = s;
 
@@ -39,7 +39,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	_memset(m, 0, sizeof(int) * nmemb);
+	memset(m, 0, sizeof(int) * nmemb);
 
 	return (m);
 }

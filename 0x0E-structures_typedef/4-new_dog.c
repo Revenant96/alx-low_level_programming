@@ -1,6 +1,6 @@
+#include <stdlib.h>
 #include "dog.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * _strlen - function to find length

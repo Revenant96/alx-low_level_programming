@@ -78,12 +78,12 @@ void print_all(const char * const format, ...)
 	va_start(ap, format);
 	while (format && format[i])
 	{
-		i = 0;
+		j = 0;
 		while (tokens[j].token)
 		{
 			if (format[i] == tokens[j].token[0])
 			{
-				token[j].f(separator, ap);
+				tokens[j].f(separator, ap);
 				separator = ", ";
 			}
 			j++;

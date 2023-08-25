@@ -4,7 +4,7 @@ section		.text
 
 main:
 	mov		edi, msg
-	mov		edax, 0
+	mov		eax, 0
 	call	printf
 
 section		.data

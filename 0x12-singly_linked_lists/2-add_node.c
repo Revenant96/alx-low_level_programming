@@ -4,7 +4,7 @@
  * add_node - function to add new node header
  * @head: address of head node
  * @str: pointer to first node
- * Reutnr: size of lise
+ * Return: size of lise
  */
 
 list_t *add_node(list_t **head, const char *str)

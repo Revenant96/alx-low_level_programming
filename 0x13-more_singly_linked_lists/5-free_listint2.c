@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- * free_listint2 - function that frees list
- * @head: address of pointer to first node
+ * free_listint2 - frees list
+ * @head: address to pointer of header node
  * Return: Void
  */
 
@@ -9,7 +9,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *node, *tmp;
 
-	if (head)
+	if (!head)
 		return;
 
 	node = *head;
@@ -20,5 +20,6 @@ void free_listint2(listint_t **head)
 		node = node->next;
 		free(tmp);
 	}
+
 	*head = NULL;
 }

@@ -18,7 +18,7 @@ int _strlen(char *s)
 }
 
 /**
- * appen_text_to_file - function that appends txt to file
+ * append_text_to_file - function that appends txt to file
  * @filename: ponter to file
  * @text_content: text to append
  * Return: 1 on success 0 on failure

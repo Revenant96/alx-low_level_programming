@@ -4,9 +4,8 @@
 #define ERR_NOREAD "Error: Can't read from file%s\n"
 #define ERR_NOWRITE "Error: Can't write to %s\n"
 #define ERR_NOCLOSE "Error: Can't close fd %d\n"
-/**
-#define PERMISSIONS S_IRUSR | S_IWUSR |S_IRGRP | S_IWGRP | S_IROTH
-*/
+#define PERMISSIONS (0664)
+
 /**
  * main - code that copies the content of a file to another file.
  * @c: arg count
@@ -27,7 +26,7 @@ int main(int c, char **v)
 	if (from == -1)
 	{ dprintf(STDERR_FILENO, ERR_NOREAD, v[1]);
 		exit(98); }
-	to = open(v[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	to = open(v[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to == -1)
 	{ dprintf(STDERR_FILENO, ERR_NOWRITE, v[2]);
 		exit(99); }
@@ -45,7 +44,7 @@ int main(int c, char **v)
 	{ dprintf(STDERR_FILENO, ERR_NOCLOSE, from);
 		exit(100); }
 	if (to)
-	{	dprintf(STDERR_FILENO, ERR_NOCLOSE, from);
+	{	dprintf(STDERR_FILENO, ERR_NOCLOSE, to);
 		exit(100); }
 	return (EXIT_SUCCESS);
 }

@@ -1,4 +1,4 @@
-#include "main.H"
+#include "main.h"
 
 /**
  * _strlen - function to find str len
@@ -8,8 +8,10 @@
 int _strlen(char *s)
 {
 	int i = 0;
+
 	if (!s)
 		return (0);
+
 	while (*s++)
 		i++;
 	return (i);
